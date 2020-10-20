@@ -1,0 +1,29 @@
+﻿<Window x:Class="lab4.UpdateFlightW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab4"
+        mc:Ignorable="d"
+        Title="updateFlightW" Height="462" Width="835">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3B84A6"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="UpdateB" Content="Update" HorizontalAlignment="Left" Margin="590,368,0,0" VerticalAlignment="Top" Height="49" Width="141" Click="UpdateFlightB" FontSize="20" Background="#FFADC6C7"/>
+        <Label x:Name="Lets_Update_" Content="Lets Update a flight!" FontSize="22" Cursor="Wait" Margin="10,10,589,348"/>
+        <TextBox x:Name="OriginTB2" HorizontalAlignment="Left" Margin="586,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="29" FontSize="22"/>
+        <TextBox x:Name="DestinationTB2" HorizontalAlignment="Left" Margin="586,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="29" FontSize="22"/>
+        <TextBox x:Name="FlightIdenTB2" HorizontalAlignment="Left" Margin="586,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="29" FontSize="22"/>
+        <TextBox x:Name="NumPassTB2" HorizontalAlignment="Left" Margin="586,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Height="29" FontSize="22"/>
+        <Label Content="Enter Origin with  4 letters" HorizontalAlignment="Left" Margin="235,70,0,0" VerticalAlignment="Top" Height="37" Width="264" FontSize="20"/>
+        <Label Content="Enter Destination with  4 letters" HorizontalAlignment="Left" Margin="235,152,0,0" VerticalAlignment="Top" Height="37" Width="304" FontSize="20"/>
+        <Label Content="Enter FlightID with 3 letters and 3 digits" HorizontalAlignment="Left" Margin="196,235,0,0" VerticalAlignment="Top" Height="37" Width="385" FontSize="20"/>
+        <Label x:Name="Destination_Label_Copy1" Content="Enter Number of passengers" Margin="235,321,278,32" FontSize="20" RenderTransformOrigin="0.512,0.752"/>
+        <Button Content="Go Back" HorizontalAlignment="Left" Margin="43,348,0,0" VerticalAlignment="Top" FontSize="22" Height="44" Width="104" Click="GoBackClick" Background="#FFADC6C7"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="lab4.DisplayFlightsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab4"
+        mc:Ignorable="d"
+        Title="DisplayFlightsWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF396897"/>
+                <GradientStop Color="#FFEDEFF3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="displayBox" HorizontalAlignment="Left" Margin="108,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="564" Height="214" FontSize="20" FontWeight="Bold" BorderBrush="#FF394E8D" VerticalScrollBarVisibility="Visible" IsReadOnly="True"/>
+        <Button x:Name="returnButton" Content="Go Back" HorizontalAlignment="Left" Margin="314,319,0,0" VerticalAlignment="Top" Height="62" Width="164" FontSize="20" Click="returnButton_Click" Background="#FFADC6C7"/>
+
+    </Grid>
+</Window>
